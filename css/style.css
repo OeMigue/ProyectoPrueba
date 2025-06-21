@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-image: image-set("../images/fondodev.png") !important;
+    background-size: cover;
+    font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo-header {
+    width: 50px;
+}
+
+.dropdown-item {
+    color: gray !important;
+}
+
+.btn-outline-success {
+    border-color: white;
+}
+
+.btn-outline-success:hover {
+    background-color: white;
+    color: grey !important;
+    border-color: grey;
+}
+
+.card{
+    background: none !important;
+    
+}
+
+.card-hover {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  position: relative;
+  background: none;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.extra-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.card-hover:hover .extra-content {
+  opacity: 1;
+  max-height: 1000px; /* ajusta según lo que necesites */
+}
+
+.list-pages {
+    list-style: none;
+padding: 0;
+}
+
+.navbar, footer {
+    background-color: grey !important;
+    
+}
+
+
+* {
+    box-sizing: border-box;
+    color: white !important;
+}
