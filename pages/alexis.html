@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>HouskyTech</title>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
     crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,68 +18,115 @@
     href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
     rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+            <div class="container">
+                <!-- HouskyTech nav -->
+                <a class="navbar-brand fw-bold" href="/index.html" target="_blank">
+                <i class="bi bi-cpu-fill me-2"></i>HouskyTech
+                </a>
+                <!-- nav full responsiv e -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="/index.html"
-                    >Home</a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">User</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        Pages
-                    </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/pages/alexis.html" target="_blank">Alexis</a></li>
-                    <li><a class="dropdown-item" href="#">Miguel</a></li>
-                    <li><a class="dropdown-item" href="#">Alderney</a></li>
-                </ul>
-                </li>
-                </ul>
-            <form class="d-flex" role="search">
-                <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                    Search
-                </button>
-            </form>
+
+                <!-- opciones nav -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html" target="_blank">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+        <!-- Imagen pal carro-->
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="">
+                        <i class="bi bi-cart"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                1   
+                            </span>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </nav>
+
+    <header class="bg-dark text-white text-center py-5 mb-4">
+        <div class="container">
+            <h1 class="display-4">Bienvenido a HouskyTech</h1>
+            <p class="lead">Tu tienda de confianza en tecnología: celulares, audífonos, laptops y más.</p>
+            <a href="#" class="btn btn-primary mt-3">Nose si hacer otra pagina para esto (Productos)</a>
+            </div>
     </header>
 
+    <!-- productos super duper -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Productos que se lleva la gente </h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- producto 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/images/iphone 14.webp" class="card-img-top" alt="iPhone14">
+            <div class="card-body">
+                <h5 class="card-title">iPhone 14</h5>
+                <p class="card-text">Potencia, estilo y tecnología Apple de última generación.</p>
+                <p class="text-primary fw-bold">$4.200.000</p>
+                <a href="#" class="btn btn-outline-primary w-100">Agregar al carrito</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- producto 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/images/sexmachine.png" class="card-img-top" alt="sexmachine">
+                <div class="card-body">
+                    <h5 class="card-title">Sex Machine</h5>
+                    <p class="card-text">Cochinota. Siente lo que no sientes con tu pareja ya que es precoz.</p>
+                    <p class="text-primary fw-bold">$5.890.900</p>
+                    <a href="#" class="btn btn-outline-primary w-100">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- producto 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/images/Portatil gamer.webp" class="card-img-top" alt="pcgamer">
+                <div class="card-body">
+                <h5 class="card-title">Portátil Gamer</h5>
+                <p class="card-text">Portátil Gamer ASUS ROG STRIX 18 Core i9 14Th 2TB 64GB RTX 4080 2K</p>
+                <p class="text-primary fw-bold">$15.852.001</p>
+                <a href="#" class="btn btn-outline-primary w-100">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="contacto" class="bg-dark text-light py-4">
+    <div class="container text-center">
+        <p class="mb-1">&copy; 2025 HouskyTech. Todos los derechos reservados.</p>
+        <div>
+        <a href="#" class="text-light me-3">a<i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/alexhousky/" target="_blank" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </div>
+    </footer>
+    
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
