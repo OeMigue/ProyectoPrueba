@@ -80,7 +80,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-header h1, h2 {
+#titulo h1, h2 {
   font-weight: 700;
   color:cadetblue
 }
@@ -118,6 +118,7 @@ footer {
   box-shadow: none;
 }
 
+/* claramente el modo oscuro no lo hice yo */
 /* === MODO OSCURO === */
 body.dark-mode {
   background-color: #121212;
@@ -159,5 +160,148 @@ body.dark-mode a {
 
 body.dark-mode .nav-link.active {
   background-color: transparent !important;
+}
+
+/* lo de arriba son los estilos de la pag de productos y alexis.html */
+
+/* estilos pag registros */
+body.pagina-registro {
+  background-image: url('/images/2\ fondo\ registro.jpg'); /* fondo imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  min-height: 100vh;
+}
+
+body.pagina-registro::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+}
+
+body.dark-mode .card {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+#form-registro {
+  background-color: rgba(20, 24, 35, 0.95); 
+  color: #f0f0f0;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
+
+#form-registro .form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #3d3d3d;
+  color: #e0e0e0;
+}
+
+#form-registro .form-control::placeholder {
+  color: #bbbbbb;
+}
+
+#form-registro .form-label {
+  color: #dcdcdc;
+}
+
+
+.boton-registro {
+  background-color: #00bfff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.boton-registro:hover {
+  background-color: #009acd;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+
+html.html-registro, body.pagina-registro {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* pag login */
+
+body.pagina-login {
+  background-image: url("/images/2\ fondo\ registro.jpg ");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body.pagina-login::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+.form-login {
+  background-color: rgba(20, 24, 35, 0.95);
+  color: #f1f1f1;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
+
+.form-login .form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f1f1f1;
+  border: 1px solid #3d3d3d;
+}
+
+.form-login .form-control::placeholder {
+  color: #aaa;
+}
+
+.boton-login {
+  background-color: #00bfff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.boton-login:hover {
+  background-color: #0b5ed7;
 }
 
