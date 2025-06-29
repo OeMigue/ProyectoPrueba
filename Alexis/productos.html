@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Productos - HouskyTech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/alexis.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/pages/alexis.html">
+                <i class="bi bi-cpu-fill me-2"></i>HouskyTech
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- opciones del nav -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/pages/alexis.html">Inicio</a></li>
+                <!-- <li class="nav-item"><a class="nav-link active" href="#">Productos</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            
+            <!-- Imagen pal carro-->
+            <li class="nav-item">
+                <a class="nav-link position-relative" href="">
+                <i class="bi bi-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        1   
+                    </span>
+                </a>
+            </li>
+            <!-- registro -->
+            <li class="nav-link" >
+                <a href="/Alexis/Registro.html" class="enlace-limpio  m-5" style="text-decoration: none;">Registrarse</a>
+            </li>
+            <!-- modo oscuro -->
+                <li class="nav-item">
+                    <button id="modoOscuroBtn" class="btn btn-outline-light ms-3">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- header  -->
+    <header class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h1 class="mb-0">Catálogo de Productos</h1>
+            <p class="lead">Explora nuestra selección de artículos tecnológicos</p>
+        </div>
+    </header>
+
+    <!-- carousel de productod -->
+    <div id="carouselProductos" class="carousel slide carousel-fade bg-light py-4" data-bs-ride="carousel" data-bs-interval="3000"> <!-- 3  putas horas para hacer un malparido carousel, esta vuelta es increible-->
+
+    <div class="container">
+    <h2 class="text-center mb-4">Productos Destacados</h2>
+    <div class="carousel-inner">
+
+    <!-- imagen 1 -->
+    <div class="carousel-item active">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="/images/iphone 14.webp" class="d-block w-100 rounded" alt="iPhone14">
+            </div>
+            <div class="col-md-6">
+                <h3>iPhone 14</h3>
+                <p>La nueva generación de smartphones Apple con cámara avanzada y diseño elegante. Ideal para quienes buscan lo mejor en rendimiento móvil.</p>
+                <p class="text-primary fw-bold">$4.200.000</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- imagen 2 -->
+    <div class="carousel-item">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="/images/sexmachine.png" class="d-block w-100 rounded" alt="sexmachine">
+            </div> 
+            <div class="col-md-6">
+                <h3>Sex Machine</h3>
+                <p>Cochinota. Siente lo que no sientes con tu pareja ya que es precoz.</p>
+                <p class="text-primary fw-bold">$5.890.900</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- imagen 3 -->
+    <div class="carousel-item">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="/images/Portatil gamer.webp" class="d-block w-100 rounded" alt="Portatil">
+            </div>
+            <div class="col-md-6">
+                <h3>Portatil Gamer</h3>
+                <p>Portátil Gamer ASUS ROG STRIX 18 Core i9 14Th 2TB 64GB RTX 4080 2K</p>
+                <p class="text-primary fw-bold">$15.852.001</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- mover carousel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
+    </div>
+
+    <!-- section productos -->
+    <section class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Producto 1 -->
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <img src="/images/iphone 14.webp" class="card-img-top" alt="producto1">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">iPhone 14</h5>
+                <p class="card-text flex-grow-1">Apple iPhone 14 con cámara avanzada y chip A15 Bionic.</p>
+                <p class="text-primary fw-bold">$4.200.000</p>
+                <button class="boton-producto">Agregar al carrito</button>
+            </div>
+            </div>
+        </div>
+
+    <!-- Producto 2 -->
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <img src="/images/sexmachine.png" class="card-img-top" alt="producto2">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sex Machine</h5>
+                <p class="card-text flex-grow-1">Cochinota. Siente lo que no sientes con tu pareja ya que es precoz.</p>
+                <p class="text-primary fw-bold">$5.890.900</p>
+                <button class="boton-producto">Agregar al carrito</button>
+            </div>
+            </div>
+        </div>
+
+    <!-- Producto 3 -->
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <img src="/images/Portatil gamer.webp" class="card-img-top" alt="producto3">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Portatil Gamer</h5>
+                <p class="card-text flex-grow-1">Portátil Gamer ASUS ROG STRIX 18 Core i9 14Th 2TB 64GB RTX 4080 2K</p>
+                <p class="text-primary fw-bold">$15.852.001</p>
+                <button class="boton-producto">Agregar al carrito</button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <img src="/images/ps2.webp  " class="card-img-top" alt="producto4">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">PS2</h5>
+                <p class="card-text flex-grow-1">
+                    La PS2 es la consola más vendida de la historia, con miles de juegos legendarios y funciones como reproductor de DVD.  
+                </p>
+                <p class="text-primary fw-bold">$200.000</p>
+                <button class="boton-producto">Agregar al carrito</button>
+            </div>
+            </div>
+        </div>    
+        
+        <!--  Producto 5 -->
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <img src="/images/ps5 new.jpg" class="card-img-top" alt="producto5">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">PS5 Slim Digital + Control</h5>
+                <p class="card-text flex-grow-1">
+                    La PS5 ofrece potencia de nueva generación con gráficos 4K, carga ultrarrápida y experiencias inmersivas
+                </p>
+                <p class="text-primary fw-bold">$2.460.000</p>
+                <button class="boton-producto">Agregar al carrito</button>
+            </div>
+            </div>
+        </div>
+
+        <!--  Producto 6 -->
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <img src="/images/xbox.png" class="card-img-top" alt="producto6">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Consola Xbox Series X 1TB</h5>
+                <p class="card-text flex-grow-1">
+                    Todo esto impulsado por la Xbox Velocity Architecture, una innovadora arquitectura que combina la potencia de la CPU
+                </p>
+                <p class="text-primary fw-bold">$2,994,465</p>
+                <button class="boton-producto">Agregar al carrito</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+        <p class="text-center bg-danger">IMAGINEN QUE HAY MAS PRODUCTOS</p>
+    <!-- Footer -->
+    <footer id="contacto" class="bg-dark text-light py-4 text-center">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 HouskyTech. Todos los derechos reservados.</p>
+        <div>
+            <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="https://www.instagram.com/alexhousky/" target="_blank" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-whatsapp fs-5"></i></a>
+        </div>
+        </div>
+    </footer>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+    ></script>
+    <script src="/Alexis/js.js"></script>
+</body>
+</html>

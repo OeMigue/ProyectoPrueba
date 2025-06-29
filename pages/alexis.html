@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HouskyTech</title>
+    <title>HouskyTech | Electrónica y Tecnología</title>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -11,7 +11,7 @@
     crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/alexis.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,57 +22,63 @@
     
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-            <div class="container">
-                <!-- HouskyTech nav -->
-                <a class="navbar-brand fw-bold" href="/index.html" target="_blank">
-                <i class="bi bi-cpu-fill me-2"></i>HouskyTech
-                </a>
-                <!-- nav full responsiv e -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- opciones nav -->
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/index.html" target="_blank">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-        <!-- Imagen pal carro-->
-                    <li class="nav-item">
-                        <a class="nav-link position-relative" href="">
-                        <i class="bi bi-cart"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                1   
-                            </span>
-                        </a>
-                    </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container-fluid">
+        <!-- HouskyTech nav -->
+            <a class="navbar-brand fw-bold" href="/index.html" target="_blank">
+            <i class="bi bi-cpu-fill me-2"></i>HouskyTech
+            </a>
+            <!-- nav full responsiv e -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- opciones nav -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html" target="_blank">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Alexis/productos.html" target="_blank">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <!-- Imagen pal carro-->
+                <li class="nav-item">
+                    <a class="nav-link position-relative" href="">
+                    <i class="bi bi-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            1   
+                        </span>
+                    </a>
+                </li>
+        <!-- registro nav-->
+                <li class="nav-link" >
+                    <a href="/Alexis/Registro.html" class="enlace-limpio m-3" style="text-decoration: none;">Registrarse</a>
+                </li>
+                <!-- modo oscuro -->
+                <li class="nav-item">
+                    <button id="modoOscuroBtn" class="btn btn-outline-light ms-3">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </li>
+                </ul>
             </div>
+        </div>
         </nav>
-
     <header class="bg-dark text-white text-center py-5 mb-4">
         <div class="container">
             <h1 class="display-4">Bienvenido a HouskyTech</h1>
             <p class="lead">Tu tienda de confianza en tecnología: celulares, audífonos, laptops y más.</p>
-            <a href="#" class="btn btn-primary mt-3">Nose si hacer otra pagina para esto (Productos)</a>
+            <a href="/Alexis/productos.html" target="_blank" class="btn btn-primary mt-3">Explorar productos</a>
             </div>
     </header>
-
     <!-- productos super duper -->
     <section class="container mb-5">
-        <h2 class="text-center mb-4">Productos que se lleva la gente </h2>
+        <h2 class="text-center mb-4">Productos mas destacados !! </h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-
         <!-- producto 1 -->
         <div class="col">
             <div class="card h-100">
@@ -85,7 +91,6 @@
             </div>
             </div>
         </div>
-
         <!-- producto 2 -->
         <div class="col">
             <div class="card h-100">
@@ -98,7 +103,6 @@
                 </div>
             </div>
         </div>
-
         <!-- producto 3 -->
         <div class="col">
             <div class="card h-100">
@@ -111,27 +115,24 @@
                 </div>
             </div>
         </div>
-
         </div>
     </section>
-
     <!-- footer -->
     <footer id="contacto" class="bg-dark text-light py-4">
     <div class="container text-center">
         <p class="mb-1">&copy; 2025 HouskyTech. Todos los derechos reservados.</p>
         <div>
-        <a href="#" class="text-light me-3">a<i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/alexhousky/" target="_blank" class="text-light me-3"><i class="bi bi-instagram"></i></a>
         <a href="#" class="text-light"><i class="bi bi-whatsapp"></i></a>
         </div>
     </div>
     </footer>
-    
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
+    <script src="/Alexis/js.js"></script>
 </body>
 </html>

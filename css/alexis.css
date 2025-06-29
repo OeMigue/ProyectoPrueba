@@ -1,0 +1,163 @@
+/* 
+ALEXIS
+*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f4f9;
+  color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.enlace-limpio {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.card-img-top {
+  object-fit: cover;      
+  width: 100%;             
+}
+
+.navbar {
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #00bfff !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00bfff !important;
+}
+
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-primary {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #00bfff;
+  border-color: #00bfff;
+  color: #fff;
+}
+
+footer {
+  background-color: #212529;
+  color: #ccc;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+header h1, h2 {
+  font-weight: 700;
+  color:cadetblue
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 160px;
+}
+footer {
+    text-align: center;
+}
+}
+
+.boton-producto {
+  background-color: #00bfff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 191, 255, 0.2);
+}
+
+.boton-producto:hover {
+  background-color: #009acd;
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(0, 191, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.boton-producto:active {
+  transform: scale(0.96);
+  box-shadow: none;
+}
+
+/* === MODO OSCURO === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+/* Tarjetas / Cards */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+body.dark-mode .card .btn-outline-primary {
+  border-color: #00bfff;
+  color: #00bfff;
+}
+
+body.dark-mode .card .btn-outline-primary:hover {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #101010;
+  color: #ccc;
+}
+
+/* Links en modo oscuro */
+body.dark-mode a {
+  color: #00bfff;
+}
+
+body.dark-mode .nav-link.active {
+  background-color: transparent !important;
+}
+
