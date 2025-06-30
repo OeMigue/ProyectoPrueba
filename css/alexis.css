@@ -305,3 +305,138 @@ body.pagina-login::before {
   background-color: #0b5ed7;
 }
 
+/* Pag del carrito */
+
+/* Fondo general de la página */
+body.pagina-carrito {
+  background-color: #0d1117;
+  color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.carrito-item {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #f8f9fa;
+  transition: 0.5s;
+}
+
+.carrito-item:hover {
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.4);
+}
+
+.resumen-carrito {
+  background-color: #1c2128;
+  border: 1px solid #30363d;
+  padding: 20px;
+  color: #f8f9fa;
+}
+
+.boton-carrito {
+  background: linear-gradient(45deg, #00BFFF, #FF007F);
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.boton-carrito:hover {
+  background: linear-gradient(45deg, #FF007F, #00BFFF);
+  transform: scale(1.03);
+}
+
+input[type="number"] {
+  background-color: #21262d;
+  border: 1px solid #444c56;
+  color: #f8f9fa;
+}
+
+/* nav, afecta los nav de la pag productos y carrito */
+.navbar {
+  background-color: #161b22 !important;
+  box-shadow: 0 2px 5px rgba(0, 191, 255, 0.3);
+}
+
+footer {
+  background-color: #161b22;
+  border-top: 1px solid #30363d;
+  color: #f8f9fa;
+}
+
+footer a:hover {
+  color: #00BFFF;
+  transform: scale(1.1);
+}
+
+/* Modo oscuro general */
+/* body.modo-oscuro {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.modo-oscuro .navbar {
+  background-color: #1c1c1c !important;
+}
+
+body.modo-oscuro footer {
+  background-color: #1c1c1c !important;
+  color: #f1f1f1;
+}
+
+body.modo-oscuro .carrito-item,
+body.modo-oscuro .resumen-carrito {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+body.modo-oscuro .form-check-label,
+body.modo-oscuro .card-title,
+body.modo-oscuro .card-text {
+  color: #f1f1f1;
+}
+
+body.modo-oscuro .mi-boton {
+  background-color: #0d6efd;
+  color: white;
+}
+
+body.modo-oscuro .mi-boton:hover {
+  background-color: #0b5ed7;
+} */
+
+/* ====== ANIMACIONES SUAVES ====== */
+
+/* ==== ANIMACIONES FADE-IN ==== */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Retrasos opcionales para elementos secuenciales */
+.fade-delay-1 { animation-delay: 0.3s; }
+.fade-delay-2 { animation-delay: 0.6s; }
+.fade-delay-3 { animation-delay: 0.9s; }
+
+/* Escala al pasar el mouse */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
