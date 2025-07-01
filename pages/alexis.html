@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HouskyTech | Electrónica y Tecnología</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/alexis.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container-fluid">
+        <!-- HouskyTech nav -->
+            <a class="navbar-brand fw-bold" href="/index.html" target="_blank">
+            <i class="bi bi-cpu-fill me-2"></i>HouskyTech
+            </a>
+            <!-- nav full responsiv e -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- opciones nav -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html" target="_blank">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Alexis/productos.html" target="_blank">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <!-- Imagen pal carro-->
+                <li class="nav-item">
+                    <a class="nav-link position-relative" href="/Alexis/carrito.html" target="_blank">
+                    <i class="bi bi-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2   
+                        </span>
+                    </a>
+                </li>
+        <!-- registro nav-->
+                <li class="nav-link" >
+                    <a href="/Alexis/Registro.html" class="enlace-limpio m-3" style="text-decoration: none;">Registrarse</a>
+                </li>
+                <!-- modo oscuro -->
+                <li class="nav-item">
+                    <button id="modoOscuroBtn" class="btn btn-outline-light ms-3">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- section titulo -->
+<section class="bg-dark text-white text-center py-5 mb-4 fade-in" id="titulo">
+    <div class="container">
+        <h1 class="display-4">Bienvenido a HouskyTech</h1>
+        <p class="lead">Tu tienda de confianza en tecnología: celulares, audífonos, laptops y más.</p>
+        <a href="/Alexis/productos.html" target="_blank" class="btn btn-primary mt-3">Explorar productos</a>
+    </div>
+</section>
+<!-- productos super duper -->
+<section class="container mb-5 fade-in">
+    <h2 class="text-center mb-4">Productos mas destacados !! </h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- producto 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/images/iphone 14.webp" class="card-img-top" alt="iPhone14">
+                <div class="card-body">
+                    <h5 class="card-title">iPhone 14</h5>
+                    <p class="card-text">Potencia, estilo y tecnología Apple de última generación.</p>
+                    <p class="text-primary fw-bold">$4.200.000</p>
+                    <a href="/Alexis/carrito.html" class="btn btn-outline-primary w-100">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <!-- producto 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/images/sexmachine-removebg-preview.png" class="card-img-top" alt="sexmachine">
+                <div class="card-body">
+                    <h5 class="card-title">Sex Machine</h5>
+                    <p class="card-text">Cochinota. Siente lo que no sientes con tu pareja ya que es precoz.</p>
+                    <p class="text-primary fw-bold">$5.890.900</p>
+                    <a href="/Alexis/carrito.html" class="btn btn-outline-primary w-100">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <!-- producto 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="/images/Portatil_gamer-removebg-preview.png" class="card-img-top" alt="pcgamer">
+                <div class="card-body">
+                    <h5 class="card-title">Portátil Gamer</h5>
+                    <p class="card-text">Portátil Gamer ASUS ROG STRIX 18 Core i9 14Th 2TB 64GB RTX 4080 2K</p>
+                    <p class="text-primary fw-bold">$15.852.001</p>
+                    <a href="/Alexis/carrito.html" class="btn btn-outline-primary w-100">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<footer id="contacto" class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row text-center text-md-start align-items-center">  
+        <!-- copirai -->
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <p class="mb-0">&copy; 2025 HouskyTech. Todos los derechos reservados.</p>
+            </div>
+            <!-- Redes sociales -->
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-5"></i></a>
+                <a href="https://www.instagram.com/alexhousky/" target="_blank" class="text-light me-3"><i class="bi bi-instagram fs-5"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-whatsapp fs-5"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+    ></script>
+    <script src="/Alexis/js.js"></script>
+</body>
+</html>
