@@ -1,0 +1,442 @@
+/* 
+ALEXIS
+*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f4f9;
+  color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.enlace-limpio {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.card-img-top {
+  object-fit: cover;      
+  width: 100%;             
+}
+
+.navbar {
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #00bfff !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00bfff !important;
+}
+
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-primary {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #00bfff;
+  border-color: #00bfff;
+  color: #fff;
+}
+
+footer {
+  background-color: #212529;
+  color: #ccc;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#titulo h1, h2 {
+  font-weight: 700;
+  color:cadetblue
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 160px;
+}
+footer {
+    text-align: center;
+}
+}
+
+.boton-producto {
+  background-color: #00bfff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 191, 255, 0.2);
+}
+
+.boton-producto:hover {
+  background-color: #009acd;
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(0, 191, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.boton-producto:active {
+  transform: scale(0.96);
+  box-shadow: none;
+}
+
+/* claramente el modo oscuro no lo hice yo */
+/* === MODO OSCURO === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+/* Tarjetas / Cards */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+body.dark-mode .card .btn-outline-primary {
+  border-color: #00bfff;
+  color: #00bfff;
+}
+
+body.dark-mode .card .btn-outline-primary:hover {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #101010;
+  color: #ccc;
+}
+
+/* Links en modo oscuro */
+body.dark-mode a {
+  color: #00bfff;
+}
+
+body.dark-mode .nav-link.active {
+  background-color: transparent !important;
+}
+
+/* lo de arriba son los estilos de la pag de productos y alexis.html */
+
+/* estilos pag registros */
+body.pagina-registro {
+  background-image: url('/images/2\ fondo\ registro.jpg'); /* fondo imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  min-height: 100vh;
+}
+
+body.pagina-registro::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+}
+
+body.dark-mode .card {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+#form-registro {
+  background-color: rgba(20, 24, 35, 0.95); 
+  color: #f0f0f0;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
+
+#form-registro .form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #3d3d3d;
+  color: #e0e0e0;
+}
+
+#form-registro .form-control::placeholder {
+  color: #bbbbbb;
+}
+
+#form-registro .form-label {
+  color: #dcdcdc;
+}
+
+
+.boton-registro {
+  background-color: #00bfff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.boton-registro:hover {
+  background-color: #009acd;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+
+html.html-registro, body.pagina-registro {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* pag login */
+
+body.pagina-login {
+  background-image: url("/images/2\ fondo\ registro.jpg ");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body.pagina-login::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+.form-login {
+  background-color: rgba(20, 24, 35, 0.95);
+  color: #f1f1f1;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
+
+.form-login .form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f1f1f1;
+  border: 1px solid #3d3d3d;
+}
+
+.form-login .form-control::placeholder {
+  color: #aaa;
+}
+
+.boton-login {
+  background-color: #00bfff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.boton-login:hover {
+  background-color: #0b5ed7;
+}
+
+/* Pag del carrito */
+
+/* Fondo general de la página */
+body.pagina-carrito {
+  background-color: #0d1117;
+  color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.carrito-item {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #f8f9fa;
+  transition: 0.5s;
+}
+
+.carrito-item:hover {
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.4);
+}
+
+.resumen-carrito {
+  background-color: #1c2128;
+  border: 1px solid #30363d;
+  padding: 20px;
+  color: #f8f9fa;
+}
+
+.boton-carrito {
+  background: linear-gradient(45deg, #00BFFF, #FF007F);
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.boton-carrito:hover {
+  background: linear-gradient(45deg, #FF007F, #00BFFF);
+  transform: scale(1.03);
+}
+
+input[type="number"] {
+  background-color: #21262d;
+  border: 1px solid #444c56;
+  color: #f8f9fa;
+}
+
+/* nav, afecta los nav de la pag productos y carrito */
+.navbar {
+  background-color: #161b22 !important;
+  box-shadow: 0 2px 5px rgba(0, 191, 255, 0.3);
+}
+
+footer {
+  background-color: #161b22;
+  border-top: 1px solid #30363d;
+  color: #f8f9fa;
+}
+
+footer a:hover {
+  color: #00BFFF;
+  transform: scale(1.1);
+}
+
+/* Modo oscuro general */
+/* body.modo-oscuro {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.modo-oscuro .navbar {
+  background-color: #1c1c1c !important;
+}
+
+body.modo-oscuro footer {
+  background-color: #1c1c1c !important;
+  color: #f1f1f1;
+}
+
+body.modo-oscuro .carrito-item,
+body.modo-oscuro .resumen-carrito {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+body.modo-oscuro .form-check-label,
+body.modo-oscuro .card-title,
+body.modo-oscuro .card-text {
+  color: #f1f1f1;
+}
+
+body.modo-oscuro .mi-boton {
+  background-color: #0d6efd;
+  color: white;
+}
+
+body.modo-oscuro .mi-boton:hover {
+  background-color: #0b5ed7;
+} */
+
+/* ====== ANIMACIONES SUAVES ====== */
+
+/* ==== ANIMACIONES FADE-IN ==== */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Retrasos opcionales para elementos secuenciales */
+.fade-delay-1 { animation-delay: 0.3s; }
+.fade-delay-2 { animation-delay: 0.6s; }
+.fade-delay-3 { animation-delay: 0.9s; }
+
+/* Escala al pasar el mouse */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
